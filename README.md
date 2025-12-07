@@ -12,7 +12,9 @@ unvalid input:
 <img width="1526" height="687" alt="Screenshot 2025-12-06 195222" src="https://github.com/user-attachments/assets/f9cb0b57-a05f-4d1a-9908-91f5e1289c8c" />
 
 
-## Problem Breakdown & Computational Thinking (You can add a flowchart and write the four pillars of computational thinking  briefly in bullets) 
+## Problem Breakdown & Computational Thinking 
+I chose Selection Sort because it is simple and easy to understand, and it sorts the list in-place without using extra memory. Its predictable process of finding the minimum element makes it ideal for small datasets and for demonstrating sorting concepts. Compared to search algorithms, sorting the data first helps make later searches or analyses clearer and more organized.
+
 Decomposition 
 - Generate a random list of integers
 - Let the user input their sorted list
@@ -38,12 +40,12 @@ Flowchart
 <img width="438" height="655" alt="Screenshot 2025-12-05 175037" src="https://github.com/user-attachments/assets/161b2572-d443-4191-b373-980c1fff4135" />
 
 ## Steps to Run 
-- Step 1: Download sound audios
-- Step 2: Click **Generate List**
-- Step 3: Enter your sorted list
-- Step 4: Click **Run Selection Sort**
+- Step 1: Click **Generate List**
+- Step 2: Enter your sorted list
+- Step 3: Click **Run Selection Sort**
 
 ## Hugging Face Link 
-emilyfeng29/selection-sort-visualizer 
+https://huggingface.co/spaces/emilyfeng29/selection-sort-visualizer
+
 ## Author & Acknowledgment
 AI was used to teach how to incorperate audio
