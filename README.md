@@ -8,7 +8,7 @@ correct answer:
 <img width="1537" height="785" alt="Screenshot 2025-12-06 194930" src="https://github.com/user-attachments/assets/e261e439-7756-494e-af9b-13116aa47cee" />
 no input:
 <img width="1526" height="688" alt="Screenshot 2025-12-06 195110" src="https://github.com/user-attachments/assets/99fdfeff-f09d-4c70-935b-1bf903edc118" />
-unvalid input:
+invalid input:
 <img width="1526" height="687" alt="Screenshot 2025-12-06 195222" src="https://github.com/user-attachments/assets/f9cb0b57-a05f-4d1a-9908-91f5e1289c8c" />
 
 
