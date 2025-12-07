@@ -1,7 +1,7 @@
 # Selection-Sort-Visualizer
 ## Algorithm Name 
 Selection Sort Visualizer
-## Demo video/gif/screenshot of test 
+## Screenshot of test 
 incorrect answer:
 <img width="1534" height="782" alt="Screenshot 2025-12-06 194017" src="https://github.com/user-attachments/assets/bb1bda27-ff86-4771-a342-96faf32a01d2" />
 correct answer:
