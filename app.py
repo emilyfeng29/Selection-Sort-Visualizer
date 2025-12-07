@@ -1,9 +1,3 @@
-from google.colab import files
-
-# Upload sound files
-correct_sound = files.upload()
-incorrect_sound = files.upload()
-
 import random
 import gradio as gr
 
@@ -25,18 +19,18 @@ def selection_sort(arr_state):
         return (
             list_msg,
             # step explanation boxes
-            *["" for _ in range(max_steps)], 
+            *["" for _ in range(max_steps)],
             # state boxes
             *["" for _ in range(max_steps)],
             # final message
             "No list to sort."
         )
 
-    # copy of array so the orginal list doesn't change
+    # copy of array so the original list doesn't change
     arr = arr_state[:]
     # stores text explaining each step
     steps = []
-    # stores the list stae after each iteration
+    # stores the list state after each iteration
     states = []
 
     # selection sort
@@ -57,10 +51,10 @@ def selection_sort(arr_state):
         # shows where the new minimum value is
         steps.append(f"New minimum at index {min_idx} (value {arr[min_idx]})")
 
-        # swap if minimum is not alreadt at position i
+        # swap if minimum is not already at position i
         if min_idx != i:
             arr[i], arr[min_idx] = arr[min_idx], arr[i]
-            #show updated list
+            # show updated list
             states.append(f"{arr}")
         else:
             # no change happened
@@ -109,53 +103,50 @@ def check_user_input(user_input, arr_state):
         return "Incorrect. Try again!", "incorrect.mp3"
 
 # UI
-with gr.Blocks(title="Selection Sort Visualizer", css = """
-body {
-    background-color: #FFFFFF;
-}
-.gradio-container {
-    border-radius: 20px;
-    background-color: #FFFFFF;
-}
-button, .gr-button {
-    background: #E2EAF4 !important;
-    color: black !important;
-    border-radius: 10px !important;
-}
+with gr.Blocks(title="Selection Sort Visualizer") as demo:
 
-label {
-    font-weight: bold !important; colour: #E2EAF4;
-}
-""") as demo:
+    # customize the GUI
+    gr.HTML("""
+    <style>
+        body { background-color: #FFFFFF; }
+        .gradio-container { border-radius: 20px; background-color: #FFFFFF; }
+        button, .gr-button { background: #E2EAF4 !important; color: black !important; border-radius: 10px !important; }
+        label { font-weight: bold !important; color: #E2EAF4; }
+    </style>
+    """)
 
     # title and explanation
     gr.Markdown("""
         # Selection Sort Visualizer
         ## How Selection Sort Works
-
         Selection Sort is a simple comparison-based sorting algorithm.
         It sorts a list **by repeatedly selecting the smallest remaining value** and swapping it into the correct position.
-
         ### Step-by-step:
         1. Look at the current position `i` in the list.
         2. Search the **rest of the list** to find the **smallest value**.
         3. If a smaller value is found, **swap** it with the value at position `i`.
         4. Move to the next position and repeat until the list is sorted.
-
         **Key idea:**
         Each pass finds the smallest item in the *unsorted* part of the list and places it in the *sorted* part.
-        """)
+        ## Time Complexity
+        Best Case: O(n)^2 Average Case: O(n)^2 Worst Case: O(n)^2 \n
+        Selection sort always scans the entire unsorted list to find the minimum, therefore the time complexity will be O(n)^2 for each case.
+        ## Space Complexity
+        The space complexity for selection sort is O(1), since it is in-place sorting. No extra array is needed.
+        ## Stability
+        Selection sort is not stable, as equal elements may change the order.
+    """)
 
-    gr.Image("https://tse3.mm.bing.net/th/id/OIP.FRSNBACr3kiYDVdvpyaQ_gHaEn?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3", label = "Selection Sort Example")
+    # example image
+    gr.Image("https://tse3.mm.bing.net/th/id/OIP.FRSNBACr3kiYDVdvpyaQ_gHaEn?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3", label="Selection Sort Example")
 
     # instructions
     gr.Markdown("""
-        ## Generate a Random List
-        Click the button below to start!
-        **Step 1:** Click **Generate List**
-        **Step 2:** Enter your sorted list**
+        ## Click the button below to start!
+        **Step 1:** Click **Generate List** \n
+        **Step 2:** Enter your sorted list \n
         **Step 3:** Click **Run Selection Sort**
-
+        ## Generate a Random List
     """)
 
     # stores the list for all functions
@@ -178,7 +169,7 @@ label {
     # button to run 'check my answer'
     check_button = gr.Button("Check My Answer")
     check_output = gr.Textbox(label="Check Result", interactive=False)
-    audio_feedback = gr.Audio(label="Audio Feedback", interactive=False)
+    audio_feedback = gr.Audio(label="Audio Feedback", interactive=False, autoplay=True)
 
     # button to run 'run selection sort step-by-step'
     run_button = gr.Button("Run Selection Sort Step by Step", variant="primary")
