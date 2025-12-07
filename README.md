@@ -36,7 +36,8 @@ Algorithmic thinking
 - Output: correct or incorrect based on the user's answer
 - Constraints: input must be integers
 
-Flowchart
+Flowchart:
+
 <img width="438" height="655" alt="Screenshot 2025-12-05 175037" src="https://github.com/user-attachments/assets/161b2572-d443-4191-b373-980c1fff4135" />
 
 ## Steps to Run 
@@ -48,4 +49,4 @@ Flowchart
 https://huggingface.co/spaces/emilyfeng29/selection-sort-visualizer
 
 ## Author & Acknowledgment
-AI was used to teach how to incorperate audio
+AI was used to teach how to add audio
