@@ -2,6 +2,12 @@
 ## Algorithm Name 
 Selection Sort Visualizer
 ## Demo video/gif/screenshot of test 
+<img width="1534" height="782" alt="Screenshot 2025-12-06 194017" src="https://github.com/user-attachments/assets/bb1bda27-ff86-4771-a342-96faf32a01d2" />
+<img width="1537" height="785" alt="Screenshot 2025-12-06 194930" src="https://github.com/user-attachments/assets/e261e439-7756-494e-af9b-13116aa47cee" />
+<img width="1526" height="688" alt="Screenshot 2025-12-06 195110" src="https://github.com/user-attachments/assets/99fdfeff-f09d-4c70-935b-1bf903edc118" />
+<img width="1526" height="687" alt="Screenshot 2025-12-06 195222" src="https://github.com/user-attachments/assets/f9cb0b57-a05f-4d1a-9908-91f5e1289c8c" />
+
+
 ## Problem Breakdown & Computational Thinking (You can add a flowchart and write the four pillars of computational thinking  briefly in bullets) 
 Decomposition 
 - Generate a random list of integers
@@ -25,6 +31,7 @@ Algorithmic thinking
 - Constraints: input must be integers
 
 Flowchart
+<img width="438" height="655" alt="Screenshot 2025-12-05 175037" src="https://github.com/user-attachments/assets/161b2572-d443-4191-b373-980c1fff4135" />
 
 ## Steps to Run 
 Step 1: Click **Generate List**
