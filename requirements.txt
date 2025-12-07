@@ -1,1 +1,2 @@
-
+# How to install
+# Open your terminal and run:pip install -r requirements.txt
