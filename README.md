@@ -44,5 +44,6 @@ Flowchart
 - Step 4: Click **Run Selection Sort**
 
 ## Hugging Face Link 
+emilyfeng29/selection-sort-visualizer 
 ## Author & Acknowledgment
 AI was used to teach how to incorperate audio
