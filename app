@@ -1,3 +1,9 @@
+from google.colab import files
+
+# Upload sound files
+correct_sound = files.upload()
+incorrect_sound = files.upload()
+
 import random
 import gradio as gr
 
