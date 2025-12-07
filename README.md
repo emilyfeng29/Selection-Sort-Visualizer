@@ -32,9 +32,9 @@ Abstraction
 - Steps of the array state, check if user input is correct
 
 Algorithmic thinking
-- Input: user enters their sorted array
-- Output: correct or incorrect based on the user's answer
-- Constraints: input must be integers
+- The user inputs their sorted list, which then flows through the code and produces a result based on their input.
+- The input is then sent to the processing function, where the Selection Sort algorithm organizes the numbers in ascending order
+- Once the sorting is complete, the output is returned to the GUI, displaying the sorted list in a separate text box.
 
 Flowchart:
 
