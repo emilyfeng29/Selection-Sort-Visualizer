@@ -38,9 +38,10 @@ Flowchart
 <img width="438" height="655" alt="Screenshot 2025-12-05 175037" src="https://github.com/user-attachments/assets/161b2572-d443-4191-b373-980c1fff4135" />
 
 ## Steps to Run 
-Step 1: Click **Generate List**
-Step 2: Enter your sorted list
-Step 3: Click **Run Selection Sort**
+- Step 1: Download sound audios
+- Step 2: Click **Generate List**
+- Step 3: Enter your sorted list
+- Step 4: Click **Run Selection Sort**
 
 ## Hugging Face Link 
 ## Author & Acknowledgment
